@@ -1,0 +1,120 @@
+/* Center the entire content on the page */
+body {
+    background-color: #e6f7ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 60%; /* Adjust the width as needed */
+    margin-right: 10px; /* Add margin to create space between input and button */
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the header */
+h1 {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px;
+    margin: 0; /* Remove margin to move it to the top */
+    text-align: center;
+}
+
+/* Style the todo list container */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style each todo item */
+li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the checkbox with a blue color */
+input[type="checkbox"] {
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+/* Style completed tasks with a line-through text decoration and a green color */
+span.done {
+    text-decoration: line-through;
+    color: #28a745; /* Green color for completed tasks */
+}
+
+/* Style buttons with a blue background and white text */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the add todo form with a white background and padding */
+form {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 60%;
+}
+
+/* Style the links within the todos with some margin and padding */
+li a {
+    margin-right: 5px; /* Add right margin to create space between links */
+    padding: 5px 10px; /* Add padding for a visual spacing effect */
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    input[type="checkbox"] {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
